@@ -1,11 +1,11 @@
 Summary:	Status bar generator for i3
 Name:		i3status
-Version:	2.5.1
+Version:	2.6
 Release:	1
 License:	BSD
 Group:		X11/Applications
 Source0:	http://i3wm.org/i3status/%{name}-%{version}.tar.bz2
-# Source0-md5:	28c27fc0c2294e12ae6ae390f3d89973
+# Source0-md5:	98f649429d7845682846de36fb38f780
 BuildRequires:	alsa-lib-devel
 BuildRequires:	libconfuse-devel
 BuildRequires:	wireless-tools-devel
