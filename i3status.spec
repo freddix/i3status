@@ -1,11 +1,11 @@
 Summary:	Status bar generator for i3
 Name:		i3status
-Version:	2.7
+Version:	2.8
 Release:	1
 License:	BSD
 Group:		X11/Applications
 Source0:	http://i3wm.org/i3status/%{name}-%{version}.tar.bz2
-# Source0-md5:	f0a39e84aebb65496af3dcec9d8cfeb8
+# Source0-md5:	68d944e9c1f48183356c9ea15b5b4e3b
 BuildRequires:	alsa-lib-devel
 BuildRequires:	libconfuse-devel
 BuildRequires:	wireless-tools-devel
@@ -27,7 +27,8 @@ as much as spawning the corresponding amount of shell commands would.
 %build
 %{__make} \
 	EXTRA_CFLAGS="%{rpmcflags}"	\
-	LDFLAGS="%{rpmldflags}"
+	LDFLAGS="%{rpmldflags}"		\
+	V=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
